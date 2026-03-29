@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base target="_top">
+    <link rel="icon" href="https://lucyschodell.pythonanywhere.com/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://lucyschodell.pythonanywhere.com/favicon.ico" type="image/x-icon">
+    <title>Virtual Sparkles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loadingScreen">
+        <div id="loadingText"></div>
+    </div>
+    <div id="app">
+    <div id="photoContainer">
+        <div id="photoOverlay">
+            These mantras were collected to give you a dose of ✨ virtual sparkles ✨ in tough moments.
+        </div>
+        <img id="photo" src="" alt="Photo">
+        <div id="photoCredit">
+            Photo by: <a id="instagramLink" href="" target="_blank"></a>
+        </div>
+        <button id="downloadButton" data-tooltip="Download the image with quote.">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="8 12 12 16 16 12" />
+                <line x1="12" y1="8" x2="12" y2="16" />
+                <line x1="4" y1="20" x2="20" y2="20" />
+            </svg>
+        </button>
+        <button id="heartButton" data-tooltip="Let us know you love this quote!">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+            </svg>
+        </button>
+        </div>
+    <div class="container">
+        <p id="quote"></p>
+    </div>
+    <footer>
+        <p>Remember: Go outside. Have adventures. Do hard things. <br>Created by <a href="https://www.instagram.com/lucyschodell/" target="_blank">@lucyschodell</a></p>
+        <div id="downloadStatusBox">
+            <p id="loadingMessage">✨ Preparing sparkles... ✨</p>
+            <div id="emojiAnimation"></div>
+        </div>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

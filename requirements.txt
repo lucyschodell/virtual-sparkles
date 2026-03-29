@@ -1,0 +1,6 @@
+flask
+gunicorn
+pygsheets
+Pillow
+requests
+pytest

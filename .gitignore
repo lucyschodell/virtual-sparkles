@@ -1,0 +1,21 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Credentials — never commit these
+*.json
+!package.json
+
+# Generated files
+footer.png
+
+# OS
+.DS_Store
+
+# Environment
+.env
+
+# Test/cache
+.pytest_cache/
