@@ -17,7 +17,7 @@ from PIL import Image, ImageDraw, ImageFont
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-app = Flask(__name__, static_folder='public')
+app = Flask(__name__, static_folder='public', static_url_path='')
 
 # Paths — relative to this file, overridable via env vars
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
